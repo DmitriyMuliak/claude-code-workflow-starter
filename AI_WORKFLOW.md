@@ -1,3 +1,7 @@
+# Windows
+
+# winget install jqlang.jq
+
 npm install -g claude-code-templates
 claude-code-templates --analytics
 npx claude-code-templates@latest --health-check
