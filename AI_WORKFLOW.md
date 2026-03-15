@@ -1,16 +1,6 @@
-# claude-code-workflow-starter
-
-## Basic claude code repo starter
-
-### Templates
-
 npm install -g claude-code-templates
 claude-code-templates --analytics
 npx claude-code-templates@latest --health-check
 
 https://docs.aitmpl.com/
 https://docs.aitmpl.com/docs/intro#interactive-installation
-
-### Claude Code Subagents Collection
-
-[Subagents Collection](https://github.com/lst97/claude-code-sub-agents)
