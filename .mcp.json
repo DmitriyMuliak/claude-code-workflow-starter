@@ -17,8 +17,10 @@
       "env": {}
     },
     "filesystem": {
+      "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/c/Users/User/Desktop"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+      "env": {}
     },
     "playwright": {
       "type": "stdio",
@@ -29,6 +31,48 @@
     "puppeteer": {
       "command": "npx",
       "args": ["-y", "puppeteer-mcp-server"],
+      "env": {}
+    },
+    "github": {
+      "name": "GitHub MCP",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_TOKEN": "..."
+      }
+    },
+    "slack": {
+      "name": "Slack MCP",
+      "command": "node",
+      "args": ["path/to/server-slack"],
+      "env": {
+        "SLACK_TOKEN": "..."
+      }
+    },
+    "memory-bank": {
+      "name": "Memory Bank MCP",
+      "command": "server-memory",
+      "args": [],
+      "env": {}
+    },
+    "brave-search": {
+      "name": "Brave Search MCP",
+      "command": "server-brave-search",
+      "args": [],
+      "env": {}
+    },
+    "google-maps": {
+      "name": "Google Maps MCP",
+      "command": "server-google-maps",
+      "args": [],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": "..."
+      }
+    },
+    "deep-graph": {
+      "name": "Deep Graph MCP (Code Graph)",
+      "command": "npx",
+      "args": ["-y", "mcp-code-graph@latest"],
       "env": {}
     }
   }
